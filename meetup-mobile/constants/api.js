@@ -17,7 +17,9 @@ class MeetupApi {
     }
 }
 
-export default MeetupApi;
+export {
+    MeetupApi
+};
 
 
 // export const fetchMeetups = () => (
