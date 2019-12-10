@@ -4,13 +4,17 @@ import { MeetupApi } from '../../../constants/api';
 import { LoadingScreen } from "../../commons";
 import { MyMeetupsList } from './components';
 import styles from './styles/HomeScreen';
-
+import { FontAwesome } from '@expo/vector-icons';
 
 const meetupApi = new MeetupApi();
 
 class HomeScreen extends Component{
     static defaultProps = {
         meetupApi
+    }
+
+    static navigationOptions = {
+        tabBarIcon: () => <FontAwesome name="home" size={25} />
     }
 
     state = {
