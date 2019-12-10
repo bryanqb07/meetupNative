@@ -12,7 +12,7 @@ const styles = EStyleSheet.create({
   title: {
     color: "$whiteColor",
     fontSize: 25,
-    fontFamily: 'montserratBold'
+    fontFamily: "montserrat"
   },
   contentContainer: {
     flex: 1
@@ -20,14 +20,15 @@ const styles = EStyleSheet.create({
   meetupCard: {
     height: 200,
     width: 175,
-    marginHorizontal: '1.5%',
-    backgroundColor: "#f73859"
+    marginHorizontal: "1.5%",
+    backgroundColor: "$redColor"
   },
   meetupCardTopContainer: {
     flex: 1,
     position: "relative"
   },
   meetupCardTitle: {
+    fontFamily: "montserratBold",
     position: "absolute",
     color: "$whiteColor",
     top: "2%",
@@ -37,13 +38,15 @@ const styles = EStyleSheet.create({
     flex: 0.4,
     backgroundColor: "$whiteColor",
     justifyContent: "center",
-    paddingHorizontal: '2.5%'
+    paddingHorizontal: "2.5%"
   },
   meetupCardMetaName: {
-    fontSize: 15
+    fontSize: 15,
+    fontFamily: "montserrat"
   },
   meetupCardMetaDate: {
-    fontSize: 13
+    fontSize: 13,
+    fontFamily: "montserratLight"
   }
 });
 

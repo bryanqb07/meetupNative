@@ -1,9 +1,10 @@
 import React from 'react';
 import EStyleSheet from 'react-native-extended-stylesheet';
 import Colors from './constants/Colors';
-import HomeScreen  from './src/screens/home/HomeScreen';
+import AppContainer from './src/routes/Navigator';
 import { cachedFonts } from './helpers';
 import { AppLoading } from "expo";
+import "react-native-gesture-handler";
 
 EStyleSheet.build(Colors);
 
@@ -41,6 +42,6 @@ export default class App extends React.Component {
         />
       );
     }
-    return <HomeScreen />;
+    return <AppContainer />;
   }
 }
