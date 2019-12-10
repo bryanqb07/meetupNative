@@ -15,11 +15,11 @@ const styles = EStyleSheet.create({
     fontFamily: "montserrat"
   },
   contentContainer: {
-    flex: 1
+    flex: 0.8
   },
   meetupCard: {
-    height: 200,
-    width: 175,
+    height: 180,
+    width: 150,
     marginHorizontal: "1.5%",
     backgroundColor: "$redColor"
   },

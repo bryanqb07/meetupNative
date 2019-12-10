@@ -1,10 +1,13 @@
 import React from 'react';
 import EStyleSheet from 'react-native-extended-stylesheet';
-import Colors from './constants/Colors';
-import AppContainer from './src/routes/Navigator';
-import { cachedFonts } from './helpers';
 import { AppLoading } from "expo";
+import { Provider } from 'react-redux';
 import "react-native-gesture-handler";
+import { cachedFonts } from "./helpers";
+
+import Colors from "./constants/Colors";
+import AppContainer from "./src/routes/Navigator";
+import store from './src/redux/store';
 
 EStyleSheet.build(Colors);
 
@@ -42,6 +45,10 @@ export default class App extends React.Component {
         />
       );
     }
-    return <AppContainer />;
+    return (
+      <Provider store={store}>
+        <AppContainer />
+      </Provider>
+    );
   }
 }

@@ -13,9 +13,13 @@ const TabNavigator = createBottomTabNavigator({
   Profile: { screen: ProfileScreen }
 }, {
   tabBarOptions: {
+    showIcon: true,
     showLabel: false,
     inactiveTintColor: Colors.$blackBlueColor,
-    activeTintColor: Colors.$redColor
+    activeTintColor: Colors.$redColor,
+    style: {
+      backgroundColor: Colors.$whiteColor
+    }
   }
 });
 

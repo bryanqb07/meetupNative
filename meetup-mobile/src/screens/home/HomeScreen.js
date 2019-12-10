@@ -3,6 +3,7 @@ import { View, Text } from 'react-native';
 import { MeetupApi } from '../../../constants/api';
 import { LoadingScreen } from "../../commons";
 import { MyMeetupsList } from './components';
+import Colors from '../../../constants/Colors';
 import styles from './styles/HomeScreen';
 import { FontAwesome } from '@expo/vector-icons';
 
@@ -14,6 +15,9 @@ class HomeScreen extends Component{
     }
 
     static navigationOptions = {
+        headerStyle: {
+            backgroundColor: Colors.$redColor,
+        },
         tabBarIcon: ({ tintColor }) => <FontAwesome name="home" size={25} color={tintColor}/>
     }
 
