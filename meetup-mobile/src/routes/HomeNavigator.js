@@ -2,12 +2,14 @@ import { createBottomTabNavigator } from "react-navigation-tabs";
 
 import { 
     HomeScreen,
-    NotificationsScreen
+    NotificationsScreen,
+    ProfileScreen
 } from '../screens/';
 
 const TabNavigator = createBottomTabNavigator({
   Home: { screen: HomeScreen },
-  Notifications: { screen: NotificationsScreen }
+  Notifications: { screen: NotificationsScreen },
+  Profile: { screen: ProfileScreen }
 });
 
 
