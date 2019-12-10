@@ -5,7 +5,9 @@ import { MaterialIcons } from "@expo/vector-icons";
 class NotificationsScreen extends Component {
   // state = {}
   static navigationOptions = {
-    tabBarIcon: () => <MaterialIcons name="notifications" size={25} />
+    tabBarIcon: ({ tintColor }) => (
+      <MaterialIcons name="notifications" size={25} color={tintColor} />
+    )
   };
 
   render() {

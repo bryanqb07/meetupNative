@@ -14,7 +14,7 @@ class HomeScreen extends Component{
     }
 
     static navigationOptions = {
-        tabBarIcon: () => <FontAwesome name="home" size={25} />
+        tabBarIcon: ({ tintColor }) => <FontAwesome name="home" size={25} color={tintColor}/>
     }
 
     state = {

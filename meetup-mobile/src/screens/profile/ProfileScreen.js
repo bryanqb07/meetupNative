@@ -6,7 +6,7 @@ class ProfileScreen extends Component {
   // state = {}
 
   static navigationOptions = {
-    tabBarIcon: () => <MaterialIcons name="account-circle" size={25} />
+    tabBarIcon: ({ tintColor }) => <MaterialIcons name="account-circle" size={25} color={tintColor} />
   };
 
   render() {
